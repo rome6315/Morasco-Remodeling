@@ -1,0 +1,76 @@
+{% extends 'core/base.html' %}
+{% load static %} <!-- load the static library -->
+{% block extrahead %}
+<link rel="stylesheet" href={% static 'core/css/contact.css' %}>
+{% endblock %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<body>
+
+    {%comment%} simple message encouraging the user to get in touch. {%endcomment%} 
+    <div class="text">
+        <p>
+            Reach Out To Us Today
+        </p>
+    </div>
+
+    {%comment%} display phone # {%endcomment%}
+    <div class="hours text-center">
+        <p>
+            724-433-8514
+        </p>
+    </div>
+
+
+    <div class="hero">
+
+        {%comment%} This is where the user can enter their contact information and message. {%endcomment%}
+        <form action="" id = "contactForm">
+            <div class="row">
+                <div class="alert">Message sent, we'll be with you soon!</div>
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+
+                {%comment%} user input field for phone # {%endcomment%}
+                <div class="input-group">
+                    <input type="text" id="number" required>
+                    <label for="number">Your Phone Number</label>
+                </div>
+            </div>
+
+             {%comment%} user input field for email {%endcomment%}
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email">Your Email</label>
+            </div>
+
+             {%comment%} user input field for message {%endcomment%}
+            <div class="input-group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message">Your Message</label>
+            </div>
+
+             {%comment%} user submit button {%endcomment%}
+            <div class="button">
+                <button type="submit">SUBMIT</button>
+            </div>
+            
+        </form>
+
+
+    </div>
+
+    {% comment %} CAN WE REMOVE THIS CDN SOMEHOW {% endcomment %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js "></script> 
+    {% comment %} REMOVE THIS OR WHATEVER SOMEHOW {% endcomment %}
+    <script src="{% static 'core/js/forms.js' %} "></script>
+    
+
+</body>
+
+
+{% endblock %}

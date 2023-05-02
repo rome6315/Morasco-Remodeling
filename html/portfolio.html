@@ -1,0 +1,107 @@
+{% extends 'core/base.html' %}
+
+{% load static %} <!-- load the static library -->
+{% block extrahead %}
+<link rel="stylesheet" href={% static 'core/css/portfolio.css' %}>
+{% endblock %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block content %}
+
+<script src="{% static 'core/js/portfolio.js' %} "></script>
+
+<h id="port_heading">Check Us Out</h>
+
+
+    <div class="port_container">
+        <div>
+            <img src="{% static 'core/images/before/bradley-basement-before.jpg' %}" class="port_photos">
+            <div class="portfolio_text_blocks">
+                <h1 class="before_and_after_heading">Before</h1>
+            </div>
+        </div>
+        <div>
+            <img src="{% static 'core/images/after/bradley-basement-after.jpg' %}" class="port_photos">
+            <div class="portfolio_text_blocks">
+                <h1 class="before_and_after_heading">After</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews_container">
+        <p class="reviews">"Morasco Remodeling is a keeper: Perry's work offers impeccable attention to getting the job done right while offering a fair price. His honesty 
+            and trustworthiness are also things you can't buy. He's also very likable and respectful while in our home.
+            For my money's worth, for remodeling, installation, or repairs you cannot find a better person."</p>
+        <p class="signature"> -Dr David B.</p>
+    </div>
+
+    <div class="port_container">
+        <div>
+            <img src="{% static 'core/images/before/glendale-bath-before.jpg' %}" class="port_photos">
+            <div class="portfolio_text_blocks">
+                <h1 class="before_and_after_heading">Before</h1>
+            </div>
+        </div>
+        <div>
+            <img src="{% static 'core/images/after/glendale-bath-after.jpg' %}" class="port_photos">
+            <div class="portfolio_text_blocks">
+                <h1 class="before_and_after_heading">After</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews_container">
+        <p class="reviews">"Morasco Remodeling is a keeper: Perry's work offers impeccable attention to getting the job done right while offering a fair price. His honesty 
+            and trustworthiness are also things you can't buy. He's also very likable and respectful while in our home.
+            For my money's worth, for remodeling, installation, or repairs you cannot find a better person."</p>
+        <p class="signature"> -Dr David B.</p>
+    </div>
+
+    <div class="port_container">
+        <div>
+            <img src="{% static 'core/images/before/kush-deck-before.jpg' %}" class="port_photos">
+            <div class="portfolio_text_blocks">
+                <h1 class="before_and_after_heading">Before</h1>
+            </div>
+        </div>
+        <div>
+            <img src="{% static 'core/images/after/kush-deck-after.jpg' %}" class="port_photos">
+            <div class="portfolio_text_blocks">
+                <h1 class="before_and_after_heading">After</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews_container">
+        <p class="reviews">"Morasco Remodeling is a keeper: Perry's work offers impeccable attention to getting the job done right while offering a fair price. His honesty 
+            and trustworthiness are also things you can't buy. He's also very likable and respectful while in our home.
+            For my money's worth, for remodeling, installation, or repairs you cannot find a better person."</p>
+        <p class="signature"> -Dr David B.</p>
+    </div>
+
+    <div class="port_container">
+        <div>
+            <img src="{% static 'core/images/before/railing-before.jpg' %}" class="port_photos">
+            <div class="portfolio_text_blocks">
+                <h1 class="before_and_after_heading">Before</h1>
+            </div>
+        </div>
+        <div>
+            <img src="{% static 'core/images/after/railing-after.jpg' %}" class="port_photos">
+            <div class="portfolio_text_blocks">
+                <h1 class="before_and_after_heading">After</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews_container">
+        <p class="reviews">"Morasco Remodeling is a keeper: Perry's work offers impeccable attention to getting the job done right while offering a fair price. His honesty 
+            and trustworthiness are also things you can't buy. He's also very likable and respectful while in our home.
+            For my money's worth, for remodeling, installation, or repairs you cannot find a better person."</p>
+        <p class="signature"> -Dr David B.</p>
+    </div>
+
+   
+
+{% endblock %}

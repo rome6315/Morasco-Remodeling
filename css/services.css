@@ -1,0 +1,201 @@
+
+/*container for each row */
+.services_row_container {
+    /* position: relative; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    /* padding-right: 20rem;
+    padding-left: 20rem; */
+    margin: auto;
+}
+
+
+.service_container{
+    margin-bottom: 150px;
+    height: 300px;
+    width: 325px;
+    opacity: 0.8;
+} 
+
+/*service type heading*/
+.service_heading {
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*service type text*/
+.service_text {
+    width: 400px;
+    padding-left: 25px;
+    font-size: 1.25rem;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*service type text*/
+.services_list {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.1rem;
+    padding-left: 0px;
+}
+
+/*images on page*/
+.services_images {
+    margin-top: -150px;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    opacity: 0; /* Set the initial opacity to 0 */
+    transition: opacity 2s ease; /* Add a transition effect */ 
+}
+
+/*heading at top of page*/
+#services_page_header {
+    font-size: 4.0rem;
+    font-weight: bold;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    display: flex;
+}
+
+/*container for didnt see heading and button*/
+.didnt_see_container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+/*style the didnt see text*/
+#didnt_see_text {
+    padding-top: 0px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*style the ask us today button*/
+#ask_us_today {
+    text-decoration: none;
+    color: inherit;
+    background-color: #FBBF24;
+    font-size: 1.125rem;  
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 12px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    margin-bottom: 100px;
+}
+
+/*hover effect for button*/
+#ask_us_today:hover {
+    color: #6B7280;
+}
+
+/* @media screen and (max-width: 1440px) and (max-height: 900px) { 
+    .services_row_container {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+} */
+
+@media screen and (max-width: 850px) {
+    .service_container {
+        width: 200px;
+        height: 250px;
+    }
+
+    .service_text {
+        font-size: 1.0rem;
+        padding-bottom: 5px;
+        padding-right: 5px;
+    }
+
+    .services_list {
+        font-size: 0.8rem;
+        padding-right: 0.7px;
+        padding-left: 0.7px;
+    }
+
+    .services_images {
+        height: 170px;
+        width: 270px;
+        border-radius: 10px;
+        /* margin-bottom: 150px; */
+    }
+
+    /* .services_row_container {
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }  */
+
+    #services_page_header {
+        font-size: 2.80rem;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+}
+
+/*mobile phone look*/
+@media screen and (max-width: 480px) {
+    .service_container {
+        margin-bottom: 50px;
+        /* border: 3px solid #6B7280;
+        border-radius: 10px; */
+        height: 225px;
+        width: 275px;
+    }
+
+    .service_text {
+        width: 200px;
+        margin-left: 30px;
+        font-size: 0.8rem;
+        padding-bottom: 10px;
+        margin-right: 30px;
+        padding-right: 0px;
+    }
+
+    .services_row_container {
+        position: relative;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #services_page_header {
+        font-size: 1.70rem;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+
+    .services_images {
+        display: none;
+    }
+
+    #didnt_see_text {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+    
+    #ask_us_today {
+        background-color: #FBBF24;
+        font-size: 1rem;  
+        font-weight: 600;
+        padding: 12px;
+        border-radius: 12px;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+}

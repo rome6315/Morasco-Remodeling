@@ -1,0 +1,87 @@
+{% load static %}
+
+<!DOCTYPE html> 
+<!-- this file will be used as a template for every html page-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href={% static 'core/css/styles.css' %}>
+    {% block extrahead %} {% endblock %}
+
+    <!-- font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Mrs+Saint+Delafield&family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- font-->
+
+    <!-- required code for carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <!-- required code for carousel -->
+
+
+    <title>{% block title %}{% endblock %} | Morasco Remodeling</title> <!-- title on tab -->
+
+    <!-- required code for favicon Below -->
+    {% load static %}
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <!-- required code for favicon Above-->
+
+    {% comment %} icons  CDN {% endcomment %}
+    <script src="https://kit.fontawesome.com/2a5c4566e9.js" crossorigin="anonymous"></script>
+    {% comment %} icons CDN {% endcomment %}
+
+  </head>
+
+  <body class="background">
+    
+    {% comment %} top nav bar {% endcomment %}
+    <nav>
+      <div class="entire_nav_container">
+          <div id="logo">
+            <a href="/">
+              <img class= "nav_img" src="{% static 'core/images/normal_sized/mr_logo.png' %}"> <!-- this is the logo -->
+            </a>
+          </div>
+        <div>
+          <a href="/services/" class="buttons">Services</a>
+          <a href="/portfolio/" class="buttons">Portfolio</a>
+          <a href="/about/" class="buttons">About Us</a>
+          <a href="/contact/" class="contact_us_button">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+    {% comment %} top nav bar {% endcomment %}
+
+    <div id="div_below_nav_filler"></div>  
+    {% comment %} WHERE OTHER PAGES ARE GOING TO LOAD (IN BETWEEN) {% endcomment %}
+    
+    {% block content %}
+    {% endblock %}
+    
+    {% comment %} WHERE OTHER PAGES ARE GOING TO LOAD (IN BETWEEN) {% endcomment %}
+    
+
+      
+    {% comment %} footer {% endcomment %}
+    <div class="entire_footer_container">
+      <ul class="menu">
+        <li><a class="menu__link" href="/">Home</a></li>
+        <li><a class="menu__link" href="/services/">Services</a></li>
+        <li><a class="menu__link" href="/portfolio/">Portfolio</a></li>
+        <li><a class="menu__link" href="/about/">About</a></li>
+        <li><a class="menu__link" href="/contact/">Contact</a></li>
+        <li><a class="menu__link" href="https://www.thryv.com/client-privacy-policy/">Privacy Policy</a></li>
+        <li><a class="menu__link" href="https://www.thryv.com/client-terms-of-use/">Terms of Use</a></li>
+      </ul>
+      <p>&copy;2023 Morasco Remodeling | All Rights Reserved</p>
+    </div>
+    {% comment %} footer {% endcomment %}
+
+  </body>
+</html>

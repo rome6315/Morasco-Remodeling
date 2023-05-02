@@ -1,0 +1,108 @@
+{% extends 'core/base.html' %}
+
+{% load static %} <!-- load the static library -->
+{% block extrahead %}
+<link rel="stylesheet" href={% static 'core/css/services.css' %}>
+{% endblock %}
+{% block title %}Services{% endblock %}
+
+{% block content %}
+
+<script src="{% static 'core/js/services.js' %} "></script>
+
+<body>
+  <h id="services_page_header">What We Can Do For You</h>
+  
+    <div class="services_row_container">
+        <div class="service_container">
+          <h1 class="service_heading">Remodeling</h1>
+          {% comment %} <p class="service_text">Kitchens, bathrooms, game rooms, interior and exterior doors, glass block,
+            flooring, closet and storage organization, shelving, suspended ceilings, framing, drywall,
+            interior painting, décor hanging (picture frames, blinds, window dressings, etc.)
+          </p> {% endcomment %}
+          <ul class="services_list">
+            <li>Kitchens</li>
+            <li>Bathrooms</li>
+            <li>Basements</li>
+            <li>Interior/Exterior Doors</li>
+            <li>Flooring</li>
+            <li>Drywall</li>
+            <li>Ceilings</li>
+            <li>Painting</li>
+          </ul>
+        </div>
+
+        <img src="{% static 'core/images/normal_sized/wood-wall-basement.jpg' %}" class="services_images">
+        
+        <div class="service_container">
+          <h2 class="service_heading">Repairs</h2>
+          {% comment %} <p class="service_text">Plumbing, electrical, drywall, ceilings, cabinetry, countertops, painting, windows, doors, insulation, outdoor spaces ... if it can be fixed, I can fix it. If it
+            can’t be fixed, I can replace it!
+          </p> {% endcomment %}
+          <ul class="services_list">
+            <li>Plumbing</li>
+            <li>Electrical</li>
+            <li>Insulation</li>
+            <li>Doors</li>
+            <li>Cabinetry</li>
+            <li>Countertops</li>
+            <li>Fencing</li>
+            <li>Drywall</li>
+          </ul>
+        </div>
+    </div>
+
+
+      <div class="services_row_container">
+        <div class="service_container">
+          <h3 class="service_heading">Household Installations</h3>
+          {% comment %} <p class="service_text">Fixtures (faucets, shower valves, tub spouts, etc.), disposals,
+            stoves, dishwashers, icemaker/water fridge lines, over-the-range microwaves,
+            washer/dryers, lighting (recessed and surface mount), ceiling fans, electrical switches and
+            receptacles, 240 volt lines for EV fast chargers.
+          </p> {% endcomment %}
+          <ul class="services_list">
+            <li>Faucets</li>
+            <li>Shower Valves</li>
+            <li>Fans</li>
+            <li>Stoves</li>
+            <li>Dishwashers</li>
+            <li>Microwaves</li>
+            <li>Washers/Dryers</li>
+            <li>Lighting</li>
+          </ul>
+        </div>
+        
+        <img src="{% static 'core/images/normal_sized/heated_floor.jpg' %}" class="services_images">
+
+        <div class="service_container">
+          <h4 class ="service_heading">Electronics Installations</h3>
+          {% comment %} <p class="service_text">Eufy© camera systems, Ring© doorbells and camera systems,
+            Google© Nest doorbells and cameras, Flat panel TV’s, audio components and wire-hiding
+            solutions, built in surround speakers, custom AV installations.
+          </p>  {% endcomment %}
+          <ul class="services_list">
+            <li>Eufy© Camera Systems</li>
+            <li>Ring© Products</li>
+            <li>Google© Nest Products</li>
+            <li>Flat Panel TV’s</li>
+            <li>Audio Components</li>
+            <li>Wire-hiding Solutions</li>
+            <li>Built-in Surround Speakers</li>
+            <li>Custom AV Installations</li>
+          </ul>
+        </div>
+      </div>
+    
+
+      <div class="didnt_see_container">
+        <h5 id="didnt_see_text">Didn't See What You Were Looking For?</h5>
+      </div>
+
+      <div class="didnt_see_container">
+        <a href="/contact/" id="ask_us_today">Ask Us About It Today!</a>
+      </div>
+    
+    
+</body>
+{% endblock %}

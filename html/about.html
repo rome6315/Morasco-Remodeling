@@ -1,0 +1,63 @@
+{% extends 'core/base.html' %} <!-- This is the base template that all other pages will call-->
+{% load static %} <!-- load the static library -->
+{% block extrahead %}
+<link rel="stylesheet" href={% static 'core/css/about.css' %}>
+{% endblock %}
+
+{% block title %}About{% endblock %} <!-- This is the title of the page-->
+
+
+<!-- This is the content of the page -->
+{% block content %}
+
+
+    <body>
+        <div class="section">
+            <div class="container">
+                <div class="content-section">
+
+                     {%comment%} title section {%endcomment%}
+                    <div class="title">
+                        <h1>About Us</h1>
+                    </div>
+
+                     {%comment%} body text {%endcomment%}
+                    <div class="content">
+                        <h3>Morasco Remodeling is owned and operated by Perrin Morasco, a Pittsburgh native
+                            with roots in North Huntingdon, North Versailles, Penn Hills, Apollo, Bloomfield and
+                            Lawrenceville.
+                        </h3>
+                        <p>A message from Perrin: I learned the trade from my grandfather starting at an
+                            early age before embarking on a career in Graphic Design in the early 90’s. During my 20 year
+                            tenure as a designer, I continued to work in the remodeling field in my spare time, helping
+                            friends, relatives and neighbors with their projects. I found that my expertise in the Graphic
+                            Design field lent itself well to the remodeling/decorating industry giving me a unique
+                            perspective when drafting up plans for a remodeling job. In 2011 I decided to take on
+                            remodeling as a full time career because of my love of the craft and the satisfaction that comes
+                            from seeing my customers happy. Going above and beyond to gain their trust is as equally
+                            important to me. Most of my customers I now consider my friends, and they are free to contact
+                            me when the have any questions or just need advice on a repair or project they are attempting
+                            to do on their own. I look forward to serving your needs. Don’t hesitate to give me a call or
+                            shoot me a text. I'll do whatever I can to solve your problem or meet your needs, and if it’s a
+                            field I don’t practice, I can recommend someone who can help you.
+                        </p>
+                        <br>
+                        <h2 style="font-family: 'Mrs Saint Delafield', sans-serif; font-size: 60px;">-Perrin J Morasco</h2>
+
+                         {%comment%} button leading to the contact form {%endcomment%}
+                        <div class="button">
+                            <a href="/contact/">Reach Out To Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                 {%comment%} picture of Perrin {%endcomment%}
+                <div class="image-section">
+                    <img src="{% static 'core/images/Squared/about-us-pic(1).jpg' %}">
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+{% endblock %}
