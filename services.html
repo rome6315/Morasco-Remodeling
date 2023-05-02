@@ -1,12 +1,6 @@
-{% extends 'core/base.html' %}
 
-{% load static %} <!-- load the static library -->
-{% block extrahead %}
-<link rel="stylesheet" href={% static 'core/css/services.css' %}>
-{% endblock %}
-{% block title %}Services{% endblock %}
+<link rel="stylesheet" href="css/services.css">
 
-{% block content %}
 
 <script src="{% static 'core/js/services.js' %} "></script>
 
@@ -16,10 +10,6 @@
     <div class="services_row_container">
         <div class="service_container">
           <h1 class="service_heading">Remodeling</h1>
-          {% comment %} <p class="service_text">Kitchens, bathrooms, game rooms, interior and exterior doors, glass block,
-            flooring, closet and storage organization, shelving, suspended ceilings, framing, drywall,
-            interior painting, décor hanging (picture frames, blinds, window dressings, etc.)
-          </p> {% endcomment %}
           <ul class="services_list">
             <li>Kitchens</li>
             <li>Bathrooms</li>
@@ -36,9 +26,6 @@
         
         <div class="service_container">
           <h2 class="service_heading">Repairs</h2>
-          {% comment %} <p class="service_text">Plumbing, electrical, drywall, ceilings, cabinetry, countertops, painting, windows, doors, insulation, outdoor spaces ... if it can be fixed, I can fix it. If it
-            can’t be fixed, I can replace it!
-          </p> {% endcomment %}
           <ul class="services_list">
             <li>Plumbing</li>
             <li>Electrical</li>
@@ -56,11 +43,6 @@
       <div class="services_row_container">
         <div class="service_container">
           <h3 class="service_heading">Household Installations</h3>
-          {% comment %} <p class="service_text">Fixtures (faucets, shower valves, tub spouts, etc.), disposals,
-            stoves, dishwashers, icemaker/water fridge lines, over-the-range microwaves,
-            washer/dryers, lighting (recessed and surface mount), ceiling fans, electrical switches and
-            receptacles, 240 volt lines for EV fast chargers.
-          </p> {% endcomment %}
           <ul class="services_list">
             <li>Faucets</li>
             <li>Shower Valves</li>
@@ -77,10 +59,6 @@
 
         <div class="service_container">
           <h4 class ="service_heading">Electronics Installations</h3>
-          {% comment %} <p class="service_text">Eufy© camera systems, Ring© doorbells and camera systems,
-            Google© Nest doorbells and cameras, Flat panel TV’s, audio components and wire-hiding
-            solutions, built in surround speakers, custom AV installations.
-          </p>  {% endcomment %}
           <ul class="services_list">
             <li>Eufy© Camera Systems</li>
             <li>Ring© Products</li>
@@ -105,4 +83,3 @@
     
     
 </body>
-{% endblock %}

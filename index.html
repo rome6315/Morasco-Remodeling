@@ -1,20 +1,8 @@
-{% extends 'core/base.html' %}
+<link rel="stylesheet" href="css/index.css">
 
-{% load static %} <!-- load the static library -->
-{% block extrahead %}
-<link rel="stylesheet" href={% static 'core/css/index.css' %}/>
-{% endblock %}
-
-{% block title %}Home{% endblock %}
-
-{% block content %}
-
-{% comment %} JavaScript animations {% endcomment %}
 <script src="{% static 'core/js/indexanimations.js' %} "></script>
 <script src="{% static 'core/js/indexbottomanimation.js' %} "></script>
-{% comment %} JavaScript animations {% endcomment %}
 
-{% comment %} Carousel {% endcomment %}
 <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel" data-bs-interval="5000">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -25,12 +13,12 @@
   <div class="carousel-inner">
 
     <div class="carousel-item active">
-      {% load static %}
+     
       <img src="{% static 'core/images/normal_sized/IMG_20161109_152215(1).jpg' %}" class="d-block w-100" alt="picture1">
 
       
       <div class="carousel-caption">
-        {% comment %} PUT FROSTED BACKGROUND BEHIND ALL W ROUNDED EDGES {% endcomment %}
+        
         <p>MORASCO REMODELING</p>
         <div class="icon-container">
           <i class="fa-solid fa-certificate" style="color: #cfac; margin-right: 30px;  font-size: 2em;" ></i>
@@ -42,12 +30,12 @@
         <br>
         <h4> With over 10 years of experience, we have the skills to help with almost all your remodeling and repairing needs.</h4>
         <a href="/contact/" class="contact_us_button" >Lets Get Started!</a>
-        {% comment %} PUT FROSTED BACKGROUND BEHIND ALL W ROUNDED EDGES {% endcomment %}
+        
       </div>
     </div>
 
     <div class="carousel-item">
-      {% load static %}
+      
       <img src="{% static 'core/images/normal_sized/IMG_20180509_162146(1).jpg' %}" class="d-block w-100" alt="picture2">
       <div class="carousel-caption">
         <p>MORASCO REMODELING</p>
@@ -56,7 +44,7 @@
     </div>
 
     <div class="carousel-item">
-      {% load static %}
+      
       <img src="{% static 'core/images/normal_sized/PXL_20210908_193124241(1).jpg' %}" class="d-block w-100" alt="picture3">
       <div class="carousel-caption">
         <p>MORASCO REMODELING</p>
@@ -75,10 +63,9 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-{% comment %} Carousel {% endcomment %}
 
 <br>
-{% comment %} Icon Banner Section {% endcomment %}
+
 <div class="container-under">
   <h2>We're Here For <u>You</u></h2>
   <p>Affordable, Professional Work, On Just About Everything</p>
@@ -115,10 +102,7 @@
   </div>
 
 </div>
-{% comment %} Icon Banner Section {% endcomment %}
 
-
-{% comment %} Why Choose Slanted Shape Section {% endcomment %}
 <div class="slanted-container">
 <div class="slanted-shape">
   <h3 class="slanted-title" id = "why">Why Choose Morasco Remodeling</h3>
@@ -143,9 +127,7 @@
 
 </div>
 </div>
-{% comment %} Why Choose Slanted Shape Section {% endcomment %}
 
-{% comment %} Bottom Section Last Chance{% endcomment %}
 <div class="wrapper">
   <div class="square">
     <img src="{% static 'core/images/random/output-onlinepngtools.png' %}" class = "ladder">
@@ -154,14 +136,10 @@
 
     <h1 class="cool-mes">What are you waiting for?</h1>
     <h1 class="cooler-mes"> LETS GET THAT -&gt  <span id="rotating-word">REMODELED</span></h1>
-    {% comment %} puts or go inside here to make the variable rotate through remodel fix install etc {% endcomment %}
+
     <div class="button-div">
       <a href="/contact/" class="contact_us_button" >Lets Do It</a>
     </div>
 
   </div>
 </div>
-{% comment %} Bottom Section Last Chance{% endcomment %}
-
-
-{% endblock %}

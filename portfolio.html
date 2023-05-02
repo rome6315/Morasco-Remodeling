@@ -1,13 +1,6 @@
-{% extends 'core/base.html' %}
 
-{% load static %} <!-- load the static library -->
-{% block extrahead %}
-<link rel="stylesheet" href={% static 'core/css/portfolio.css' %}>
-{% endblock %}
+<link rel="stylesheet" href="css/portfolio.css">
 
-{% block title %}Portfolio{% endblock %}
-
-{% block content %}
 
 <script src="{% static 'core/js/portfolio.js' %} "></script>
 
@@ -101,7 +94,3 @@
             For my money's worth, for remodeling, installation, or repairs you cannot find a better person."</p>
         <p class="signature"> -Dr David B.</p>
     </div>
-
-   
-
-{% endblock %}

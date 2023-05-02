@@ -1,27 +1,17 @@
-{% extends 'core/base.html' %} <!-- This is the base template that all other pages will call-->
-{% load static %} <!-- load the static library -->
-{% block extrahead %}
-<link rel="stylesheet" href={% static 'core/css/about.css' %}>
-{% endblock %}
-
-{% block title %}About{% endblock %} <!-- This is the title of the page-->
+<link rel="stylesheet" href="css/about.css">
 
 
 <!-- This is the content of the page -->
-{% block content %}
-
 
     <body>
         <div class="section">
             <div class="container">
                 <div class="content-section">
 
-                     {%comment%} title section {%endcomment%}
                     <div class="title">
                         <h1>About Us</h1>
                     </div>
 
-                     {%comment%} body text {%endcomment%}
                     <div class="content">
                         <h3>Morasco Remodeling is owned and operated by Perrin Morasco, a Pittsburgh native
                             with roots in North Huntingdon, North Versailles, Penn Hills, Apollo, Bloomfield and
@@ -44,20 +34,15 @@
                         <br>
                         <h2 style="font-family: 'Mrs Saint Delafield', sans-serif; font-size: 60px;">-Perrin J Morasco</h2>
 
-                         {%comment%} button leading to the contact form {%endcomment%}
                         <div class="button">
                             <a href="/contact/">Reach Out To Us</a>
                         </div>
                     </div>
                 </div>
 
-                 {%comment%} picture of Perrin {%endcomment%}
                 <div class="image-section">
                     <img src="{% static 'core/images/Squared/about-us-pic(1).jpg' %}">
                 </div>
             </div>
         </div>
     </body>
-
-
-{% endblock %}
