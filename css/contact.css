@@ -107,20 +107,10 @@ textarea:focus~label
     font-size: 4rem;
     border-radius: 1cm;
 }
-.alert{
-    width: 100%;
-    background: rgb(0, 255, 106)  !important;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 900;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-.alert.show {
+#msg{
+    color: #61b752;
+    margin-top: -20px;
     display: block;
-    opacity: 1;
 }
 
 @media screen and (max-width: 768px){
